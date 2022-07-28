@@ -4,7 +4,7 @@ body {
   font-family: "League Spartan", sans-serif;
   font-size: 15px;
   max-width: 1440px;
-  width: 100vh;
+  height: 100vh;
   margin: 0 auto;
   box-sizing: border-box;
 }
