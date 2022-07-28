@@ -214,16 +214,16 @@ h3 {
       url("../images/bg-pattern-bottom-mobile.svg");
   }
 
-  section:nth-child(2) > article:nth-child(1) {
-    align-self: center !important;
+  section > div > div:nth-child(1) {
+    align-self: unset;
   }
 
-  section:nth-child(2) > article:nth-child(2) {
-    align-self: center !important;
+  section > div > div:nth-child(2) {
+    align-self: unset;
   }
 
-  section:nth-child(2) > article:nth-child(3) {
-    align-self: center !important;
+  section > div > div:nth-child(3) {
+    align-self: unset;
   }
 
   section > div > div {
@@ -231,8 +231,20 @@ h3 {
   }
 
   section:nth-child(1) > div:nth-child(2) {
-    flex: unset !important;
-    justify-content: unset;
     flex-direction: column;
+  }
+
+  article {
+    flex: unset;
+    margin: 5px;
+    width: 65%;
+  }
+
+  article:not(:last-child) {
+    margin-right: 5px;
+  }
+
+  section:nth-child(1) > div:nth-child(1) {
+    padding: 0 25px 0 25px;
   }
 }
